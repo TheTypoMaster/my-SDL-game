@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{30EB2595-AF51-4BE9-AD50-81E454A7D4F6}</ProjectGuid>
+    <RootNamespace>MySDLGame2</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>E:\Program files D New\Lua\5.1\include;E:\SDL2-devel-2.0.3-VC\SDL2_ttf-2.0.12\include;E:\SDL2-devel-2.0.3-VC\SDL2_net-2.0.0\include;E:\SDL2-devel-2.0.3-VC\SDL2_mixer-2.0.0\include;E:\SDL2-devel-2.0.3-VC\SDL2_image-2.0.0\include;E:\SDL2-devel-2.0.3-VC\SDL2-2.0.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Program files D New\Lua\5.1\lib;E:\SDL2-devel-2.0.3-VC\SDL2_ttf-2.0.12\lib\x86;E:\SDL2-devel-2.0.3-VC\SDL2_net-2.0.0\lib\x86;E:\SDL2-devel-2.0.3-VC\SDL2_mixer-2.0.0\lib\x86;E:\SDL2-devel-2.0.3-VC\SDL2_image-2.0.0\lib\x86;E:\SDL2-devel-2.0.3-VC\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <ShowIncludes>true</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_ttf.lib;SDL2_mixer.lib;lua5.1.lib;lua51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="block.cpp" />
+    <ClCompile Include="blockService.cpp" />
+    <ClCompile Include="button.cpp" />
+    <ClCompile Include="chunk.cpp" />
+    <ClCompile Include="consoleService.cpp" />
+    <ClCompile Include="counter.cpp" />
+    <ClCompile Include="entity.cpp" />
+    <ClCompile Include="entityService.cpp" />
+    <ClCompile Include="grassTile.cpp" />
+    <ClCompile Include="gridService.cpp" />
+    <ClCompile Include="imageService.cpp" />
+    <ClCompile Include="inventory.cpp" />
+    <ClCompile Include="inventoryDisplay.cpp" />
+    <ClCompile Include="inventoryService.cpp" />
+    <ClCompile Include="item.cpp" />
+    <ClCompile Include="itemService.cpp" />
+    <ClCompile Include="label.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="playerService.cpp" />
+    <ClCompile Include="render.cpp" />
+    <ClCompile Include="SDLFileService.cpp" />
+    <ClCompile Include="serviceLocator.cpp" />
+    <ClCompile Include="slider.cpp" />
+    <ClCompile Include="testBlock.cpp" />
+    <ClCompile Include="tile.cpp" />
+    <ClCompile Include="tileService.cpp" />
+    <ClCompile Include="toolTip.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="world.cpp" />
+    <ClCompile Include="worldGen.cpp" />
+    <ClCompile Include="worldGrid.cpp" />
+    <ClCompile Include="worldService.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="block.h" />
+    <ClInclude Include="blockService.h" />
+    <ClInclude Include="button.h" />
+    <ClInclude Include="chunk.h" />
+    <ClInclude Include="consoleService.h" />
+    <ClInclude Include="counter.h" />
+    <ClInclude Include="entity.h" />
+    <ClInclude Include="entityService.h" />
+    <ClInclude Include="grassTile.h" />
+    <ClInclude Include="gridService.h" />
+    <ClInclude Include="imageService.h" />
+    <ClInclude Include="inventory.h" />
+    <ClInclude Include="inventoryDisplay.h" />
+    <ClInclude Include="inventoryService.h" />
+    <ClInclude Include="item.h" />
+    <ClInclude Include="itemService.h" />
+    <ClInclude Include="label.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="playerService.h" />
+    <ClInclude Include="render.h" />
+    <ClInclude Include="SDLFileService.h" />
+    <ClInclude Include="serviceLocator.h" />
+    <ClInclude Include="slider.h" />
+    <ClInclude Include="testBlock.h" />
+    <ClInclude Include="tile.h" />
+    <ClInclude Include="tileService.h" />
+    <ClInclude Include="toolTip.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="world.h" />
+    <ClInclude Include="worldGen.h" />
+    <ClInclude Include="worldGrid.h" />
+    <ClInclude Include="worldService.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AI_Follow.lua" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

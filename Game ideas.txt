@@ -1,0 +1,50 @@
+dungeons accessed like cthulu saves the world
+build a town
+trading
+large world
+other towns
+bandits
+guns
+futuristic
+energy management
+AE style storage
+hire npcs
+resource gathering
+	wood, stone, ores etc.
+traders
+guards
+
+weapon customisation
+	changable barrel, generator, chassis for energy weapons
+	changable barrel, stock, reciever, ammo type etc. for combustion weapons
+energy shields
+	protect against energy weapons but not combustion weapons
+kinetic shields
+	protect against combustion weapons but not energy weapons
+shields could be stackable/combinable
+combustion weapons late game weapons?
+
+Soaryn mob
+	places random chests and places random stuff in it
+	chests are called Soaryn chests
+
+button to select a block like minecraft
+button to select appropriate tool
+
+space stations
+	new world grid
+	no random generation
+	first time gen - spawn a small platform
+	kill player if they step out of the blocks
+	space station blocks - use with space stations for the above
+
+"programmable" devices
+	select options referencing variables
+		fairy tale glyph traps ep 42/43
+trains
+	follow tracks
+	monorail?
+	carry items/liquids/players
+	train engine and different carrages
+	one class with multiple entity objects
+	update them all depending on the engine object
