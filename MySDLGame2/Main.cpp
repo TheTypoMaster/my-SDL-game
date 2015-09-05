@@ -15,7 +15,7 @@
 //move the loading of GUI images to the UI class
 //	have different arrays for each colour of UI
 //	have one enum for all of the above arrays
-//	have a seperate array for general UI stuff
+//	have a separate array for general UI stuff
 
 //use scripting to create AI packages
 //use lua scripts to create items?
@@ -376,7 +376,7 @@ bool loadAllTextures()
 		loaded = false;
 		cout << "[ERROR]: Failed to load 'assets/Textures/SaraFullSheet.png'" << endl;
 	}
-	//the seperate UI sections
+	//the separate UI sections
 	if (!loadUI())
 	{
 		loaded = false;
